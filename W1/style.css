@@ -1,0 +1,28 @@
+h1 {
+    font-style: italic;
+    
+}
+p {
+    font-weight : bold;
+    font-size : 2em;
+    color :  #111
+}
+.henry:hover{
+    color:antiquewhite;
+}
+.henry{
+    
+    width:100vw;
+    height:100vh;
+    /* flex */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: linear-gradient(130deg ,red , black);
+
+    /* text-align:center; */
+}
+*{
+    margin:0px;
+    padding:0px;
+}
