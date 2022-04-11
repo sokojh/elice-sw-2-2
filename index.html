@@ -33,7 +33,7 @@
                 border-right:5px green solid;
             }
             }
-           
+            
 
         </style>
         <title>WEB - Welcome</title>
@@ -41,7 +41,34 @@
     </head>
     <body>
   
-      
+        <div id="button1">
+            <input type="button" value ="night" onclick="
+            let on_off=true
+            if(on_off===true){
+                document.querySelector('body').style.backgroundColor='black'
+                document.querySelector('body').style.color='white'
+            }else if(on_off===false){
+                document.querySelector('body').style.backgroundColor='white '
+                document.querySelector('body').style.color='black'
+                
+            }
+            ";>
+        </div>
+        <div id="button2">
+            <input type="button" value ="day" onclick="
+            let darkbody= document.querySelector('body').style.backgroundColor='black'
+            let fontcolor=    document.querySelector('body').style.color='white'
+            on_off=false;
+            if(on_off===true){
+                darkbody
+                fontcolor
+            }else if(on_off===false){
+                document.querySelector('body').style.backgroundColor='white '
+                document.querySelector('body').style.color='black'
+                
+            }
+            ";>
+        </div>
       <H1><a href="index.html">WEB</a></H1>
       <div id="container">
       <ol>
@@ -55,5 +82,6 @@
      
   </div>    
   </div>
+ 
     </body>
 </html>
