@@ -40,35 +40,29 @@
         <meta charset="utf-8">
     </head>
     <body>
-  
+        <script>
+            console.log(this);
+        </script>
+        <input type='button' onclock="console.log(this);" value="1">
+        <input type='button' onclock="console.log(this);" value="2">
         <div id="button1">
-            <input type="button" value ="night" onclick="
+            <input style ="background-color: black;color:white" type="button" value ="night" id="darkmodebtn" onclick="
             let on_off=true
-            if(on_off===true){
+            if(value==='night'){
                 document.querySelector('body').style.backgroundColor='black'
                 document.querySelector('body').style.color='white'
-            }else if(on_off===false){
+                document.querySelector('#darkmodebtn').value='day'
+                document.querySelector(this).style='background-color: black;'
+            }else if(value==='day'){
                 document.querySelector('body').style.backgroundColor='white '
                 document.querySelector('body').style.color='black'
-                
+                document.querySelector('#darkmodebtn').value='night'
+                document.querySelector(this).style='background-color: white;'
             }
+            
             ";>
         </div>
-        <div id="button2">
-            <input type="button" value ="day" onclick="
-            let darkbody= document.querySelector('body').style.backgroundColor='black'
-            let fontcolor=    document.querySelector('body').style.color='white'
-            on_off=false;
-            if(on_off===true){
-                darkbody
-                fontcolor
-            }else if(on_off===false){
-                document.querySelector('body').style.backgroundColor='white '
-                document.querySelector('body').style.color='black'
-                
-            }
-            ";>
-        </div>
+  
       <H1><a href="index.html">WEB</a></H1>
       <div id="container">
       <ol>
