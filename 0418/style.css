@@ -1,0 +1,23 @@
+.divbox{
+    color:red;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    padding: 0px;
+    border-bottom:1px green solid ;
+    margin-bottom:0px;
+}
+@media all and (min-width:480px){
+    #container{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+ol{
+    margin-top:0px;
+    border-right:5px green solid;
+}
+}
+

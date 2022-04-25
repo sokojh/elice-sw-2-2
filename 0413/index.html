@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E3LSDQ1HJR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E3LSDQ1HJR');
+</script>
+        <style>
+            .divbox{
+                color:red;
+            }
+          
+            a{
+                text-decoration: none;
+            }
+            h1{
+                padding: 0px;
+                border-bottom:1px green solid ;
+                margin-bottom:0px;
+            }
+            @media all and (min-width:480px){
+                #container{
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            ol{
+                margin-top:0px;
+                border-right:5px green solid;
+            }
+            }
+            
+
+        </style>
+        <title>WEB - Welcome</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            console.log(this);
+            function night(){
+                document.querySelector('body').style.backgroundColor='black'
+                document.querySelector('body').style.color='white'
+                document.querySelector('#darkmodebtn').value='day'
+                document.querySelector(this).style='background-color: black;'
+                let as = document.querySelectorAll('a');
+                for(let i=0;i<as.length;i++){
+                    as[i].style.color='white'
+                }
+        
+            }
+            function day(){
+                document.querySelector('body').style.backgroundColor='white '
+                document.querySelector('body').style.color='black'
+                document.querySelector('#darkmodebtn').value='night'
+                document.querySelector(this).style='background-color: white;'
+                document.querySelectorAll('a').style.color='blue';
+                let as = document.querySelectorAll('a');
+                for(let i=0;i<as.length;i++){
+                    as[i].style.color='blue'
+                }
+            }
+        </script>
+        <input type='button' onclock="console.log(this);" value="1">
+        <input type='button' onclock="console.log(this);" value="2">
+        <div id="button1">
+            <input style ="background-color: black;color:white" type="button" value ="night" id="darkmodebtn" onclick="
+            let on_off=true
+            if(value==='night'){
+                nigth();
+                
+            }else if(value==='day'){
+                day();
+            }
+            
+            ";>
+        </div>
+  
+      <H1><a href="index.html">WEB</a></H1>
+      <div id="container">
+      <ol>
+          <li><a href="1.html">html</a></li>
+          <li><a href="2.html">css</a></li>
+          <li><a href="3.html">Javascript</a></li>
+      </ol>
+      <div>
+          <h1>Welcome</h1>
+          Hello, WEB!!!@@@
+     
+  </div>    
+  </div>
+ 
+    </body>
+</html>

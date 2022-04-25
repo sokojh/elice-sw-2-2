@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <input type="button" id="btn1" value="egoing" >
+    <input type="button" id="btn2" value="duru">
+<script>
+function l(s){//event 객체가 처음 들어온다.
+    console.log(s)
+    debugger;
+    alert(s.target.value);
+}
+function l2(){
+        alert(2);
+}
+document.querySelector('#btn1').addEventListener('click',l)
+document.querySelector('#btn2').addEventListener('click',l2)
+
+</script>
+</body>
+</html>
